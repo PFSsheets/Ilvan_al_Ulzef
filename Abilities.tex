@@ -1,0 +1,154 @@
+\newcounter{xp}
+\newcounter{ecl}
+\newcounter{age}
+\newcounter{totalhp}
+\newcounter{currenthp}
+\newcounter{str}
+\newcounter{dex}
+\newcounter{con}
+\newcounter{int}
+\newcounter{wis}
+\newcounter{cha}
+\newcounter{strmod}
+\newcounter{dexmod}
+\newcounter{conmod}
+\newcounter{intmod}
+\newcounter{wismod}
+\newcounter{chamod}
+\newcounter{sizemod}
+\newcounter{initmod}
+\newcounter{initmisc} %misc initiative modifier
+\newcounter{ac}
+\newcounter{touchac}
+\newcounter{flatfootedac}
+\newcounter{acarmour}
+\newcounter{acshield}
+\newcounter{acdex}
+\newcounter{acsize}
+\newcounter{acnatural}
+\newcounter{acdeflect}
+\newcounter{acmisc}
+\newcounter{acmaxdex}
+\newcounter{fort}
+\newcounter{reflex}
+\newcounter{will}
+\newcounter{basefort}
+\newcounter{baseref}
+\newcounter{basewill}
+\newcounter{resistancesave}
+\newcounter{magicfort}
+\newcounter{magicref}
+\newcounter{magicwill}
+\newcounter{fortmisc}
+\newcounter{refmisc}
+\newcounter{willmisc}
+\newcounter{cmb}
+\newcounter{cmd}
+\newcounter{cmbmisc}
+\newcounter{cmdmisc}
+\newcounter{bab}
+\newcounter{spellresistance}
+\newcounter{lightload}
+\newcounter{medload}
+\newcounter{heavyload}
+\newcounter{money}
+\newcounter{casterlevel}
+
+\newcommand{\charname}{Ilvan al-Ulzef}
+\newcommand{\charrace}{Human}
+\newcommand{\charclass}{Swashbuckler (Whirling Dervish) 8}
+\newcommand{\charalignment}{LN}
+\newcommand{\charsex}{Male}
+\newcommand{\charsize}{Medium}
+\setcounter{sizemod}{0}
+\newcommand{\chartype}{Humanoid (Human)}
+\newcommand{\charheight}{6'2``}
+\newcommand{\charweight}{90kg/190lb}
+\newcommand{\charhair}{Black}
+\newcommand{\chareyes}{Green}
+\setcounter{age}{22}
+
+\setcounter{xp}{21}
+\setcounter{ecl}{8}
+
+\setcounter{totalhp}{68}
+\setcounter{currenthp}{68}
+\newcommand{\speed}{30', 6sq (light load)}
+
+\setcounter{str}{13} % 3
+\setcounter{dex}{22} % 13 +2 belt +1 4th +2 human
+\setcounter{con}{12} % 2
+\setcounter{int}{11} % 1
+\setcounter{wis}{7} % -4
+\setcounter{cha}{16} % 5 +2 headband
+
+
+\setcounter{acnatural}{0}
+\setcounter{acarmour}{5}
+\setcounter{acmaxdex}{6} %maximum dexterity modifier armour allows. Use a high number for none
+\setcounter{acmisc}{2} %Nimble
+\setcounter{initmisc}{4}
+\setcounter{basefort}{2}
+\setcounter{baseref}{6}
+\setcounter{basewill}{2}
+\setcounter{resistancesave}{0}
+\setcounter{bab}{8}
+\setcounter{spellresistance}{0}
+
+\setcounter{cmdmisc}{\value{acdeflect} + \value{acmisc}}
+
+\newcommand{\feats}{
+Weapon Finesse${}^b$, Dervish Dance${}^b$, Improved Unarmed Strike, Improved Grapple, Power attack, Agile Maneuvers, Snapping Turtle Style, Snapping Turtle Clutch, Combat Reflexes\\
+}
+
+\newcommand{\traits}{
+I know a Guy (+2 to diplomacy to gather information, +1 on Knowledge (local), Reactionary, Blade of Mercy \\
+}
+
+\newcommand{\specialabilities}{
+\textbf{Panache}: 3 (regained with crit or knock out with weapon,
+ or enemy surrendering) \\
+\textbf{Charmed Life}: 2/day +3 to saves, immediate action \\
+\textbf{Deeds: with 1 panache}: +2 init, +\arabic{ecl} damage, stand from prone without provoking AoO, Intimidate to demoralise as swift action; No penalty to acrobatics at full-speed. \\
+\textbf{Spend 1 panache to}: Add 1d6 to Acrobatics, Climb, Escape Artist, Fly, Ride, or Swim check; Move 5' as immediate action and gain +3AC; Parry/Riposte an attack; Add +\arabic{ecl} to precision damage on next attack as swift action; \textit{Whirlwind Dance}: As full-round action, move and stab everyone along the way (up to 2 attacks).
+}
+
+\newcommand{\conditionalmods}{
+}
+\newcommand{\languages}{
+Common, Qadiran, Infernal \\
+}
+\setcounter{lightload}{150}
+\setcounter{medload}{300}
+\setcounter{heavyload}{\value{lightload} + \value{medload}}
+
+\setcounter{money}{0}
+
+\newcommand{\conditionalspellmods}{
+}
+
+\setcounter{casterlevel}{0}
+
+\newcommand{\spellsknown}{
+}
+
+\newcommand{\domains}{
+None
+}
+\newcommand{\notes}{
+0/4 Prestige
+}
+\newcommand{\people}{
+}
+
+\input{../pathfinder_society.tex}
+
+\newcommand{\scenariolist}{
+
+}
+
+
+\newcommand{\biography}{
+
+}
+
