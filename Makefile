@@ -1,12 +1,12 @@
-all: charsheet asciisheet summarysheet
+all: charsheet asciisheet softlink
+
+softlink: charsheet
+	ln -sf Charsheet.pdf Ilvan.pdf 
 
 charsheet: Charsheet.tex
 	pdflatex $^
 
 asciisheet: AsciiCharsheet.tex
-	pdflatex $^
-
-summarysheet: SummarySheet.tex
 	pdflatex $^
 
 clean: 
