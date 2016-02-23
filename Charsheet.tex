@@ -134,6 +134,8 @@
 \textbf{INITIATIVE} $ \arabic{initmod} = \underbrace{\arabic{dexmod}}_{\mbox{\tiny Dex}} + \underbrace{\arabic{initmisc}}_{\mbox{\tiny Misc}} $ \\
 \textbf{AC} $\arabic{ac} = 10 + \underbrace{\arabic{acarmour}}_{\mbox{\tiny Armour}} + \underbrace{\arabic{acshield}}_{\mbox{\tiny Shield}}+ \underbrace{\arabic{acdex}}_{\mbox{\tiny Dex}} + \underbrace{\arabic{acsize}}_{\mbox{\tiny Size}} + \underbrace{\arabic{acnatural}}_{\mbox{\tiny Natural}} + \underbrace{\arabic{acdeflect}}_{\mbox{\tiny Deflect}} + \underbrace{\arabic{acmisc}}_{\mbox{\tiny Misc}}$\\
 \vspace{2mm}
+% Snapping Turtle Clutch adds shield to touchac.
+\setcounter{touchac}{\value{touchac} + \value{acshield}}
 \textbf{Touch} \arabic{touchac}, \textbf{Flat-Footed} \arabic{flatfootedac}\
 \begin{tabular}{c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}}
  \tiny Saving Throws & \tiny TOTAL& & \tiny Base && \tiny Ability && \tiny Magic && \tiny Misc && \tiny Temp \\
@@ -146,7 +148,9 @@
 \vspace{2mm}
 \textbf{BASE ATTACK BONUS} +\arabic{bab}\\
 \textbf{SPELL RESISTANCE} \arabic{spellresistance}\\
-\textbf{CMB} $ \arabic{cmb} = \underbrace{\arabic{bab}}_{\mbox{\tiny BAB}} + \underbrace{\arabic{strmod}}_{\mbox{\tiny STR}} + \underbrace{\arabic{sizemod}}_{\mbox{\tiny SIZE}} + \underbrace{\arabic{cmbmisc}}_{\mbox{\tiny MISC}}$ \\
+% Agile Manouvres
+\setcounter{cmb}{\value{cmb} - \value{strmod} + \value{dexmod}}
+\textbf{CMB} $ \arabic{cmb} = \underbrace{\arabic{bab}}_{\mbox{\tiny BAB}} + \underbrace{\arabic{dexmod}}_{\mbox{\tiny DEX}} + \underbrace{\arabic{sizemod}}_{\mbox{\tiny SIZE}} + \underbrace{\arabic{cmbmisc}}_{\mbox{\tiny MISC}}$ \\
 \textbf{CMD} $ \arabic{cmd} = \underbrace{\arabic{bab}}_{\mbox{\tiny BAB}} + \underbrace{\arabic{strmod}}_{\mbox{\tiny STR}} + \underbrace{\arabic{dexmod}}_{\mbox{\tiny DEX}} + \underbrace{\arabic{sizemod}}_{\mbox{\tiny SIZE}} + \underbrace{\arabic{cmdmisc}}_{\mbox{\tiny MISC}}+ 10 $\\
 
 \begin{center}
